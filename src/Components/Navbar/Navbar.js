@@ -1,22 +1,27 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import '.Components/Navbar/Navbar.css';
+import './Navbar.css'
+import CartWidget from '../CartWidget/CartWidget';
+import LogoEcommerce from '../Logo/LogoEcommerce';
+
 function NavbarBootstrap() {
   return (
-    // <Navbar collapseOnSelect expand="lg" className="bg-rojito">
-    <Navbar collapseOnSelect expand="lg" className="bg-dark">
-      <Container>
-        <Navbar.Brand><h1 className="text-primary fw-bolder">Cleber shop</h1></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link className="text-white fw-bold" href="#features">Pantalones</Nav.Link>
-            <Nav.Link className="text-white fw-bold" href="#pricing">Camperas</Nav.Link>
-            <Nav.Link className="text-white fw-bold" href="#pricing">Remeras</Nav.Link>
+    <Navbar collapseOnSelect expand="lg" className="bg-negro" id="contenedorNavbar">
+      <Container className="container-fluid">
+        <Navbar.Brand><LogoEcommerce /></Navbar.Brand>
+        <Navbar.Toggle className="badge bg-white " aria-controls="responsive-navbar-nav " />
+        <Navbar.Collapse  id="responsive-navbar-nav">
+          <Nav className="ms-auto ">
+            <Nav.Link className="text-white fw-bold" href="#features">NUEVO</Nav.Link>
+            <Nav.Link className="text-white fw-bold" href="#features">MUJER</Nav.Link>
+            <Nav.Link className="text-white fw-bold" href="#features">HOMBRE</Nav.Link>
+            <Nav.Link className="text-white fw-bold" href="#features">NIÑO</Nav.Link>
+            <Nav.Link className="text-white fw-bold" href="#features">NIÑA</Nav.Link>
+            <Nav.Link className="fw-bold" id="text-warning" href="#pricing">SALE</Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link className="text-white fw-bold" href="#deets">Carrito</Nav.Link>
+          <Nav className="d-flex">
+            <button className="btn btn-dark-light fs-1"><CartWidget /></button>
           </Nav>
         </Navbar.Collapse>
       </Container>
