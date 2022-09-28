@@ -13,20 +13,25 @@
   .bg-amarillo{ 
     background-color: #fee43c;
   }
+  
  @media(max-width: 767px ) {
-  img.w-50 {
-    margin-top: -5px;
-}
-div#responsive-navbar-nav {
-  background-color: #333;
-  position: absolute;
-  transition: all .2s ease;
-  width: 200px;
-  height: 88vh;
-  right: 0px;
-  top: 80px;
- 
-}
-
+   #desktop{
+    display: none;
+   }
+    #mobile{
+      display: flex;
+    }
+    
      
   }
+  @media(min-width: 768px) { 
+    #mobile{
+      display: none;
+    }
+    #desktop{
+      display: flex;
+    }
+    
+   }
+   
+   
