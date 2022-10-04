@@ -2,7 +2,15 @@
     background-color: #333;
   }
   #contenedorNavbar {
+    margin-top: -20px!important;
+    padding-bottom: 35px;
+    z-index: 1500;
+  }
+  #contenedorNavbarSticky{
     height: 80px;
+    position: fixed;
+    top: -50px;
+    z-index: 1400;
   }
   #btn-cart{
     height: 30px;
@@ -30,8 +38,8 @@
     }
     #desktop{
       display: flex;
+      background-color: #fff;
+
     }
     
    }
-   
-   

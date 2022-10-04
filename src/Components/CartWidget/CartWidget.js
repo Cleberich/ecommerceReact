@@ -1,9 +1,9 @@
-import Cart from './assets/cart.svg'
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const CartWidget = () =>{
     return (
         <div className="d-flex" id='btn-cart'>
-            <img src={Cart} alt="cart"/><span className='fs-5 bg-amarillo text-dark fw-bold ms-2 rounded-circle px-2'>1</span>
+            <LocalMallIcon/><span className='fs-5 bg-dark text-white fw-bold ms-2 rounded-circle px-2'>1</span>
         </div>
     )
 }

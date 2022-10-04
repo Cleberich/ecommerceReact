@@ -3,7 +3,7 @@ import logo from './assetsLogo/Indumentaria-femenina.png'
 const LogoEcommerce = () =>{
     return(
         <div>
-            <img src={logo} className='w-50' alt="logoecommerce"/>
+            <img className="w-25" src={logo} alt="logoecommerce"/>
         </div>
     )
 }

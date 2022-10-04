@@ -1,6 +1,12 @@
-.bg-rojo {
-  background-color: #D23232;
+.bg-negro {
+  background-color: #293038!important;
 }
 .fs-7{
   font-size: 10px;
+}
+#actionBar{
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2000!important;
 }
